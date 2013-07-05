@@ -1,0 +1,3 @@
+.icon-<%=name%> {
+background-position: -<%=x%>px -<%=y%>px;
+}

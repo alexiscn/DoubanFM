@@ -1,0 +1,29 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+
+    "policy":"隐私策略",
+    "feedback":"意见反馈",
+    "moreapps":"更多应用",
+    "heartchannel":"红心",
+    "offlinechannle":"离线",
+    "markheart"              : "标记喜欢",
+    "markhearted":"歌曲已经标记为红心",
+    "next":"下一首",
+    "delete":"不再播放该歌曲",
+    "deleted":"该歌曲不会再播放",
+    //login 
+    "email":"邮箱",
+    "password":"密码",
+    "login":"登录",
+    "clicktoplay":"点击继续播放",
+    "sharetitle":"分享豆酱电台",
+    "sharecontent":"我正在听 #{0}MHz# {1}的《{2}》，{3}，真的很好听！（来自Windows8客户端-豆酱电台）",
+    "sharecontentdefault":"豆酱电台是一款专为Windows 8打造的电台应用，很赞哦",
+    "sharedesc":"分享豆瓣音乐",
+    //guide
+    "guide1Title":"豆瓣FM 的工作原理",
+    "guide1Desc":"豆瓣FM 会记录并分析你的每一个操作，即时调整为你推荐的曲目。<br>你提供给豆瓣FM 的反馈信息越多，它就越了解你的音乐口味。",
+    "guide1Detail":"<em>红心：</em>点击红心，豆瓣FM 会给你播放更多这样的好歌。<br><em>垃圾桶：</em>仅在私人兆赫可用。一首歌被扔进垃圾桶后，豆瓣FM 将不再为你播放它。<br><em>跳过：</em>暂时不想听这首歌曲，可以先跳过。频繁的跳过操作也会影响豆瓣FM 的推荐。<br>"
+    
+}

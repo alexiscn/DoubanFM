@@ -1,0 +1,397 @@
+﻿body {
+    background-image:url(../images/background1.jpg);
+    display: -ms-flexbox;
+}
+
+.main {
+    margin: 20px;
+    color: #fff;
+    height: 100%;
+    width: 600px;
+}
+
+.container {
+    height: 600px;
+}
+
+.channelInfo {
+    background-color: #026550;
+    padding: 6px;
+    border-radius: 30px;
+    float: right;
+    margin: 10px;
+}
+
+    .channelInfo:hover {
+        background-color: #01cead;
+    }
+
+    .channelInfo img {
+        float: left;
+        margin: 3px;
+    }
+
+.songinfo {
+    height: 45%;
+    padding-left: 20px;
+    background-color: #019b79;
+}
+
+#artistName {
+    font-size: 28px;
+}
+
+.progressBar {
+    height: 5%;
+    background-color: #026550;
+}
+
+progress:indeterminate {
+}
+
+progress {
+    height: 100%;
+    width: 100%;
+    color: #01cead;
+}
+
+#albumCover {
+    margin-top: -495px;
+    margin-left: 125px;
+}
+
+    #albumCover #coverimage {
+        height: 350px;
+        width: 350px;
+        border-radius: 250px;
+    }
+
+    #albumCover #coveroverlay {
+        position: absolute;
+        margin-top: -350px;
+        height: 350px;
+        width: 350px;
+        border-radius: 250px;
+        background-color: rgba(255,255,255,0.6);
+        display: none;
+    }
+
+        #albumCover #coveroverlay p {
+            margin-top: 175px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+.commands {
+    height: 50%;
+    display: -ms-flexbox;
+    background-color: transparent;
+}
+
+.playicon {
+    background-image: url('../images/iconcommand.png');
+    background-color: #019b79;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 2px #6bc2af solid;
+    margin: 0px;
+}
+
+    .playicon:hover, .iconActive {
+        background-color: #026550;
+    }
+
+.icon-heart {
+    background-position: -352px -0px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+    .icon-heart:hover, .heartActive {
+        background-position: -416px -0px;
+        left: 30px;
+        top: 30px;
+    }
+
+.icon-delete {
+    background-position: -224px  -0px;
+    position: relative;
+    left: 46px;
+    top: 150px;
+}
+
+.icon-playpause {
+    background-position: -80px -0px; /*play: 0px 0px;*/
+    background-color: #ff5301;
+	height:80px;
+	width:80px;
+    position: relative;
+    left: 122px;
+    top: 200px;
+}
+
+.icon-next {
+    background-position: -160px -0px;
+    position: relative;
+    left: 198px;
+    top: 150px;
+}
+
+.icon-volume {
+    background-position: -288px -0px;
+    position: relative;
+    left: 214px;
+    top: 30px;
+}
+
+.lyric {
+    height: 150px;
+    color: #999;
+    text-align: center;
+}
+
+    .lyric #lyricWarpper {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        margin-left: -40px;
+    }
+
+        .lyric #lyricWarpper #lyric_panel {
+            list-style: none;
+        }
+
+            .lyric #lyricWarpper #lyric_panel li {
+                line-height: 25px;
+                min-height: 25px;
+            }
+
+                .lyric #lyricWarpper #lyric_panel li.current {
+                    color: #019b79;
+                    font-weight: bold;
+                }
+
+#channels {
+    display: block;
+    margin-top: 10px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.channel {
+    border: 1px solid #666;
+    color: #666;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+    .channel:hover, .channelcurrent {
+        background-color: #019b79;
+        border: 1px solid #019b79;
+        color: #fff;
+    }
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: -ms-flexbox;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/en-US/storelogo.png);
+    background-color: #026550;
+}
+
+#profile {
+    background-color: #019b79;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+    #profile:hover, #logo:hover {
+        background-color: #01cead;
+    }
+
+#volumeControl {
+    border: 2px #01cead solid;
+    background-color: #fff;
+}
+
+    #volumeControl #volumerange::-ms-fill-lower {
+        background-color: #019b79;
+    }
+
+#guide {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background: #c7ebe2;
+    color: #333;
+}
+
+    #guide .guide1 {
+        width: 481px;
+        height: 52px;
+        background-image: url(../images/guide1.png);
+    }
+
+    #guide .title {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    #guide em {
+        font-style: normal;
+        font-family: Hiragino Sans GB;
+        font-weight: bold;
+    }
+
+#login {
+    position: absolute;
+    width: 420px;
+    height: 300px;
+    padding: 20px;
+    background: #f8f8f8;
+    color: #000;
+}
+
+    #login .header {
+        background-image: url(../images/login_with_douban_32.png);
+        height: 32px;
+        width: 168px;
+    }
+
+    #login .login-form {
+        margin: 20px 0;
+    }
+
+    #login progress {
+        float: right;
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+
+    #login input {
+        width: 100%;
+        font-size: 24px;
+    }
+
+        #login input[type=text]:focus, input[type=password]:focus {
+            outline: 1px dashed #CCD8C0;
+        }
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .main {
+        width: 320px;
+        margin: 0px;
+    }
+
+    #login {
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        margin-left: 100px;
+        display: none;
+    }
+
+    .channel {
+        display: none;
+    }
+
+    #albumCover {
+        margin-top: -445px;
+        margin-left: 30px;
+    }
+
+        #albumCover #coverimage {
+            height: 260px;
+            width: 260px;
+            border-radius: 260px;
+        }
+
+        #albumCover #coveroverlay {
+            position: absolute;
+            margin-top: -260px;
+            height: 260px;
+            width: 260px;
+            border-radius: 260px;
+            background-color: rgba(255,255,255,0.6);
+            display: none;
+        }
+
+            #albumCover #coveroverlay p {
+                margin-top: 115px;
+                text-align: center;
+                font-size: 24px;
+                color: #333;
+            }
+
+    .playicon {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        margin: 6px;
+        left: 0px;
+        top: 150px;
+    }
+
+    .icon-heart {
+        background-position: -480px  0px;
+    }
+
+        .icon-heart:hover, .heartActive {
+            left: 0px;
+            top: 150px;
+            background-position: -144px -80px;
+        }
+
+    .icon-delete {
+        background-position: -48px -80px;
+    }
+
+    .icon-playpause {
+        background-position: -96px -80px; /*play-192px -80px */
+    }
+
+    .icon-next {
+        background-position: -0px -80px;
+    }
+
+    .icon-volume {
+        background-position: -528px  0px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+.modal-button {
+    background-color: rgba(19,161,162,0.8);
+    border: 0;
+    float: right;
+}
+
+button.modal-button:hover, button.modal-button:active {
+    background-color: rgba(19,161,162,0.9);
+    color: #fff;
+}

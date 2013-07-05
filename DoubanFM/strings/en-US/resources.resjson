@@ -1,0 +1,28 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+
+    "policy":"policy",
+    "feedback":"feedback",
+    "moreapps":"more apps",
+    "heartchannel":"hearted",
+    "offlinechannle":"offline",
+    "markheart"              : "like",
+    "markhearted":"this song marked",
+    "next":"next",
+    "delete":"delete",
+    "deleted":"this song won't play anymore",
+    //login 
+    "email":"email",
+    "password":"password",
+    "login":"login",
+    "clicktoplay":"click to play",
+    "sharetitle":"share DouJiang FM",
+    "sharecontent":"I am listening to #{0}MHz# {1}'s 《{2}》, {3} sweet！(shared from DouJiangFM)",
+    "sharecontentdefault":"DouJiang FM is awrsome radio app for Windows 8,amazing!",
+    "sharedesc":"Share Douban Music To..",
+    //guide
+    "guide1Title":"Working principle of DouJiangFM",
+    "guide1Desc":"DouJiangFM will record and analyze your every action, immediately adjust the recommended track for you. <br>Feedback the information you provide to watercress FM, the more, the more we know about your musical tastes.",
+    "guide1Detail":"<em>Heart：</em>Click on the hearts, DouJiangFM will give you more of these good songs.<br><em>Delete：</em>Available only in private MHz. After a song has been thrown into the trash, DouJiangFM will no longer play it for you.<br><em>Next：</em>Do not want to listen to the song, you can skip. Frequently skip recommended action will also affect the watercress FM.<br>"
+}

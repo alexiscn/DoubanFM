@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DoubanFM</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- DoubanFM references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery-1.8.3.js"></script>
+    <script src="/js/jquery.easyModal.js"></script>
+    <script src="/js/douban.js"></script>
+
+    <link href="/css/toastr.css" rel="stylesheet"/>
+    <script src="/js/toastr.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="progressBar">
+                <progress id="progressBar"></progress>
+            </div>
+            <div class="channelInfo">
+                <img class="playing" src="/images/channel-current.gif" />
+                <div id="currentChannel"></div>
+            </div>
+            <div class="songinfo">
+                <div id="artistName"></div>
+                <div id="title"></div>
+                <div id="progressText"></div>
+            </div>
+            <div class="commands">
+                <div id="iconHeart" class="playicon icon-heart" data-win-res="{title:'markheart'}"></div>
+                <div id="iconDelete" class="playicon icon-delete" data-win-res="{title:'delete'}"></div>
+                <div id="iconPlayPause" class="playicon icon-playpause" data-win-res="{title:'next'}"></div>
+                <div id="iconNext" class="playicon icon-next" data-win-res="{title:'next'}"></div>
+                <div id="iconVolume" class="playicon icon-volume"></div>
+            </div>
+            <div id="albumCover">
+                <div id="coverimage"></div>
+                <div id="coveroverlay">
+                    <p data-win-res="{innerText:'clicktoplay'}"></p>
+                </div>
+            </div>
+
+            <audio id="audioPlayer" msaudiocategory="BackgroundCapableMedia"></audio>
+        </div>
+        <div class="lyric">
+            <div id="lyricWarpper">
+                <ul id="lyric_panel"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div id="logo"></div>
+        <div id="profile"></div>
+    </div>
+
+    <div id="channels" style="display:none">
+    </div>
+
+    <div id="volumeControl" data-win-control="WinJS.UI.Flyout">
+        <input id="volumerange" type="range" class="win-vertical" max="100" min="0" />
+    </div>
+
+    <!--登录-->
+    <div id="login" style="display: none">
+        <div class="header"></div>
+        <div class="login-form">
+            <p style="margin: 5px 0;">
+                <label for="loginuser" data-win-res="{innerText:'email'}"></label>
+            </p>
+            <p>
+                <input id="loginuser" type="text">
+            </p>
+            <p style="margin: 5px 0;">
+                <label for="loginpwd" data-win-res="{innerText:'password'}"></label>
+            </p>
+            <p>
+                <input id="loginpwd" type="password">
+            </p>
+        </div>
+
+        <button id="btnlogin" type="button" class="modal-button" data-win-res="{innerText:'login'}"></button>
+        <progress class="win-ring" style="display: none"></progress>
+    </div>
+
+    <div id="guide" style="display:none">
+        <div class="guide1"></div>
+        <p class="title" data-win-res="{innerText:'guide1Title'}"></p>
+        <p class="desc" data-win-res="{innerHTML:'guide1Desc'}"></p>
+        <p class="detail" data-win-res="{innerHTML:'guide1Detail'}"></p>
+    </div>
+</body>
+</html>
